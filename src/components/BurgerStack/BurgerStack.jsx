@@ -10,7 +10,7 @@ const BurgerStack = ({stack, removeFromBurger}) => {
     {stack.map((ingredient, i) =>{
         return(
      
-            <li key={i}>
+            <li key={i} style={{ backgroundColor: ingredient.color }}>
                 {ingredient.name}
                 <button onClick={() => removeFromBurger(ingredient.name)} >X</button>
             </li>
